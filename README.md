@@ -88,7 +88,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		  "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
 
-	```
+		```
 2. **Get All Tickets**
 	- **Method**: `GET`
 	- **Endpoint**: `/api/tickets`
