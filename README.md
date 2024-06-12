@@ -39,16 +39,16 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Request Body:**
 	 	 ```JSon
 	 	 { 
-	    		"username": "abc23@email.com", 
-	    		"password": "abc123"
-	  	  }
+	   	  "username": "abc23@email.com", 
+	   	  "password": "abc123"
+	  	 }
 		```	
  	 - **Response:**
-	     	 ```JSON
-	  	  {
-	  		  "token": "jwt_token"
-	    	   }
-		   ```
+     		```JSon
+		{ 
+ 	         "token": "jwt_token"
+	        }
+		```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
@@ -61,10 +61,9 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		```
    	- **Response:**
 		```JSon
-		 { 
- 		   "username": "abc23@email.com", 
-	           "password": "abc123"
-	          }
+		{ 
+ 	         "token": "jwt_token"
+	        }
 		```
 ### Tickets
 1. **Create a ticket**
