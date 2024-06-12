@@ -29,9 +29,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	```
 5. **Configure environment variables:** 
 	Create a `.env` file in the root of your project and add the following content:
-	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?schema=public"`
-	`JWT_SECRET="your_jwt_secret_key"`
-
+	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?		schema=public"
+	JWT_SECRET="your_jwt_secret_key"`
 ### Authentication
 1. **Register**
 	- **Method:** `POST`
@@ -45,19 +44,19 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		```	
  	 - **Response:**
      		```JSon
-		{ 
- 	         "token": "jwt_token"
-	        }
-		```
+     		{
+     		 "token": "jwt_token"
+     		}
+     		```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
 	- **Request Body:**
 		```JSon
-	 	 { 
+	        { 
 	 	   "username": "abc23@email.com", 
 	 	   "password": "abc123"
-	 	  }
+	        }
 		```
    	- **Response:**
 		```JSon
@@ -124,10 +123,10 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
    - **Headers:** `Authorization: Bearer <jwt_token>`
    - **Request Body:**
 		```JSON
-	 	 {
+	        {
 	 	  "title": "Sample Ticket_1",
 	  	  "description": "This is a sample ticket_1"
-		  }
+		}
 		```
    - **Response:**
  		```JSON
@@ -145,6 +144,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Headers:** `Authorization: Bearer <jwt_token>`
 	- **Response:**
 		```JSON
-			{ "message": "Ticket deleted" }
+		{
+  		 "message": "Ticket deleted"
+  		}
 		```
 ## Thanks
