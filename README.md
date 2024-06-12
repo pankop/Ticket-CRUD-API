@@ -37,12 +37,12 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/register`
 	- **Request Body:**
-	  ```JSon
-	  { 
+	 	 ```JSon
+	 	 { 
 	    "username": "abc23@email.com", 
 	    "password": "abc123"
 	  }
-	```
+		```	
  	 - **Response:**
 	      ```JSON
 	    {
@@ -53,19 +53,19 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
 	- **Request Body:**
-	```JSon
-	  { 
-	    "username": "abc23@email.com", 
-	    "password": "abc123"
-	  }
-	```
+		```JSon
+	 	 { 
+	 	   "username": "abc23@email.com", 
+	 	   "password": "abc123"
+	 	 }
+		```
    	- **Response:**
-	```JSon
-	  { 
-	    "username": "abc23@email.com", 
-	    "password": "abc123"
-	  }
-	```
+		```JSon
+		 { 
+	           "username": "abc23@email.com", 
+	  	    "password": "abc123"
+	          }
+		```
 ### Tickets
 1. **Create a ticket**
 	- **Method**: `POST`
@@ -73,7 +73,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Headers:** `Authorization: Bearer <jwt_token>`
 	- **Request Body**:
 		```JSON
-		{ "title": "Sample Ticket",
+		{
+     	          "title": "Sample Ticket",
 		  "description": "This is a sample ticket"
 		}
 		```
@@ -93,17 +94,17 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Endpoint**: `/api/tickets`
 	- **Headers:** `Authorization: Bearer <jwt_token>`
 	- **Response**:
-	```JSON
-	[
-	  {
-	    "id": 1,
-	    "title": "Sample Ticket",
-	    "description": "This is a sample ticket",
-	    "createdAt": "2024-06-12T00:00:00.000Z",
-	    "updatedAt": "2024-06-12T00:00:00.000Z"
-	  }
-	]
-	```
+		```JSON
+		[
+		  {
+	 	   "id": 1,
+	 	   "title": "Sample Ticket",
+	 	   "description": "This is a sample ticket",
+	 	   "createdAt": "2024-06-12T00:00:00.000Z",
+	 	   "updatedAt": "2024-06-12T00:00:00.000Z"
+	 	 }
+		]
+		```
 3. **Get Tickets by ID**
 	- **Method**: `GET`
 	- **Endpoint**: `/api/tickets/:id`
@@ -117,28 +118,28 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		 "createdAt": "2024-06-12T00:00:00.000Z",
 		 "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
-	```
+		```
 4. **Update Ticket**
    - **Method:** `PUT`
    - **Endpoint:** `api/tickets/:id`
    - **Headers:** `Authorization: Bearer <jwt_token>`
    - **Request Body:**
-	```JSON
-	  {
-	   "title": "Sample Ticket_1",
-	   "description": "This is a sample ticket_1"
-	  }
-	```
+		```JSON
+	 	 {
+	 	  "title": "Sample Ticket_1",
+	  	 "description": "This is a sample ticket_1"
+		  }
+		```
    - **Response:**
- 	```JSON
-	   {
+ 		```JSON
+	   	{
 		 "id": 1,
 		 "title": "Sample Ticket_1",
 		 "description": "This is a sample ticket_1",
 		 "createdAt": "2024-06-12T00:00:00.000Z",
 		 "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
-	```
+		```
 5. **Delete Ticket**
 	- **Method:** `DELETE`
 	- **Endpoint:** `/api/tickets/:id`
@@ -146,5 +147,5 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Response:**
 		```JSON
 			{ "message": "Ticket deleted" }
-	```
+		```
 ## Thanks
