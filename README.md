@@ -147,5 +147,5 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Response:**
 		```JSON
 		{ "message": "Ticket deleted" }
-	```
-##Thanks
+		```
+## Thanks
