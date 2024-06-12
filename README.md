@@ -59,8 +59,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "password": "abc123"
 	  }
 	```
-	 - **Response:**
-		```JSon
+   	- **Response:**
+	```JSon
 	  { 
 	    "username": "abc23@email.com", 
 	    "password": "abc123"
@@ -103,7 +103,6 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "updatedAt": "2024-06-12T00:00:00.000Z"
 	  }
 	]
-
 	```
 3. **Get Tickets by ID**
 	- **Method**: `GET`
@@ -124,14 +123,14 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
    - **Endpoint:** `api/tickets/:id`
    - **Headers:** `Authorization: Bearer <jwt_token>`
    - **Request Body:**
-	  ```JSON
+	```JSON
 	  {
 	   "title": "Sample Ticket_1",
 	   "description": "This is a sample ticket_1"
 	  }
 	```
    - **Response:**
-   ```JSON
+ 	```JSON
 	   {
 		 "id": 1,
 		 "title": "Sample Ticket_1",
@@ -145,7 +144,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Endpoint:** `/api/tickets/:id`
 	- **Headers:** `Authorization: Bearer <jwt_token>`
 	- **Response:**
-		```JSON
+	```JSON
 		{ "message": "Ticket deleted" }
-		```
+	```
 ## Thanks
