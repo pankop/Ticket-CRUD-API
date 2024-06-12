@@ -9,11 +9,11 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	```bash
 	git clone https://github.com/yourusername/ticket-crud-api.git 
 	cd ticket-crud-api
-```
+	```
 2. **Install dependencies:**
 	```bash
 	npm install
-```
+	```
 3. **Setup Database:**
 	Create a new PostgreSQL database and user. You can use the following commands in PostgreSQL shell or your preferred PostgreSQL management tool.
 	```sql
@@ -21,7 +21,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	CREATE USER ticketuser WITH ENCRYPTED PASSWORD 'password';
 	GRANT ALL PRIVILEGES ON DATABASE ticketdb TO ticketuser;
 
-```
+	```
 4. **Setup Prisma:**
 	Generate Prisma client by running:
 	```bash
@@ -42,13 +42,13 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "username": "abc23@email.com", 
 	    "password": "abc123"
 	  }
-```
+	```
 	- **Response:**
 	 ```JSON
 	 {
 	  "token": "jwt_token"
 	 }
-```
+	```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
@@ -58,14 +58,14 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "username": "abc23@email.com", 
 	    "password": "abc123"
 	  }
-```
+	```
 	 - **Response:**
 		```JSon
 	  { 
 	    "username": "abc23@email.com", 
 	    "password": "abc123"
 	  }
-```
+	```
 ### Tickets
 1. **Create a ticket**
 	- **Method**: `POST`
@@ -87,7 +87,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		  "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
 
-```
+	```
 2. **Get All Tickets**
 	- **Method**: `GET`
 	- **Endpoint**: `/api/tickets`
@@ -104,7 +104,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	  }
 	]
 
-```
+	```
 3. **Get Tickets by ID**
 	- **Method**: `GET`
 	- **Endpoint**: `/api/tickets/:id`
@@ -118,7 +118,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		 "createdAt": "2024-06-12T00:00:00.000Z",
 		 "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
-```
+	```
 4. **Update Ticket**
    - **Method:** `PUT`
    - **Endpoint:** `api/tickets/:id`
@@ -129,7 +129,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	   "title": "Sample Ticket_1",
 	   "description": "This is a sample ticket_1"
 	  }
-```
+	```
    - **Response:**
    ```JSON
 	   {
@@ -139,7 +139,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		 "createdAt": "2024-06-12T00:00:00.000Z",
 		 "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
-```
+	```
 5. **Delete Ticket**
 	- **Method:** `DELETE`
 	- **Endpoint:** `/api/tickets/:id`
@@ -147,5 +147,4 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Response:**
 		```JSON
 		{ "message": "Ticket deleted" }
-```
-
+	```
