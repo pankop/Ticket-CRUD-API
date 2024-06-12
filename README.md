@@ -43,12 +43,12 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "password": "abc123"
 	  }
 	```
- - **Response:**
-	  ```JSON
-	  {
-	  "token": "jwt_token"
-	  }
-	 ```
+ 	 - **Response:**
+	      ```JSON
+	    {
+	    "token": "jwt_token"
+	     }
+	   ```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
@@ -144,7 +144,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Endpoint:** `/api/tickets/:id`
 	- **Headers:** `Authorization: Bearer <jwt_token>`
 	- **Response:**
-	```JSON
-		{ "message": "Ticket deleted" }
+		```JSON
+			{ "message": "Ticket deleted" }
 	```
 ## Thanks
