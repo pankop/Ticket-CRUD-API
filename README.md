@@ -29,7 +29,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	```
 5. **Configure environment variables:** 
 	Create a `.env` file in the root of your project and add the following content:
-	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?		schema=public"
+	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?schema=public"
 	JWT_SECRET="your_jwt_secret_key"`
 ### Authentication
 1. **Register**
@@ -43,7 +43,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	  	 }
 		```	
  	 - **Response:**
-     		```JSon
+     		```
      		{
      		 "token": "jwt_token"
      		}
@@ -54,8 +54,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Request Body:**
 		```JSon
 	        { 
-	 	   "username": "abc23@email.com", 
-	 	   "password": "abc123"
+	         "username": "abc23@email.com", 
+	         "password": "abc123"
 	        }
 		```
    	- **Response:**
@@ -85,7 +85,6 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		  "createdAt": "2024-06-12T00:00:00.000Z",
 		  "updatedAt": "2024-06-12T00:00:00.000Z"
 		}
-
 		```
 2. **Get All Tickets**
 	- **Method**: `GET`
@@ -124,8 +123,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
    - **Request Body:**
 		```JSON
 	        {
-	 	  "title": "Sample Ticket_1",
-	  	  "description": "This is a sample ticket_1"
+	         "title": "Sample Ticket_1",
+	         "description": "This is a sample ticket_1"
 		}
 		```
    - **Response:**
