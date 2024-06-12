@@ -43,7 +43,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	  	 }
 		```	
  	 - **Response:**
-     		```
+     		```JSon 
      		{
      		 "token": "jwt_token"
      		}
@@ -56,7 +56,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	        { 
 	         "username": "abc23@email.com", 
 	         "password": "abc123"
-	        }
+	 	}
 		```
    	- **Response:**
 		```JSon
