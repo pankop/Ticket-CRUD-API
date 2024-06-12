@@ -29,7 +29,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	```
 5. **Configure environment variables:** 
 	Create a `.env` file in the root of your project and add the following content:
-	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?schema=public" 
+	`DATABASE_URL="postgresql://ticketuser:password@localhost:5432/ticketdb?schema=public"`
 	`JWT_SECRET="your_jwt_secret_key"`
 
 ### Authentication
@@ -39,16 +39,16 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Request Body:**
 	 	 ```JSon
 	 	 { 
-	    "username": "abc23@email.com", 
-	    "password": "abc123"
-	  }
+	    		"username": "abc23@email.com", 
+	    		"password": "abc123"
+	  	  }
 		```	
  	 - **Response:**
-	      ```JSON
-	    {
-	    "token": "jwt_token"
-	     }
-	   ```
+	     	 ```JSON
+	  	  {
+	  		  "token": "jwt_token"
+	    	   }
+		   ```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
@@ -57,13 +57,13 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	 	 { 
 	 	   "username": "abc23@email.com", 
 	 	   "password": "abc123"
-	 	 }
+	 	  }
 		```
    	- **Response:**
 		```JSon
 		 { 
-	           "username": "abc23@email.com", 
-	  	    "password": "abc123"
+ 		   "username": "abc23@email.com", 
+	           "password": "abc123"
 	          }
 		```
 ### Tickets
@@ -74,8 +74,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Request Body**:
 		```JSON
 		{
-     	          "title": "Sample Ticket",
-		  "description": "This is a sample ticket"
+  		 "title": "Sample Ticket",
+		 "description": "This is a sample ticket"
 		}
 		```
 	- **Response**:
@@ -102,7 +102,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	 	   "description": "This is a sample ticket",
 	 	   "createdAt": "2024-06-12T00:00:00.000Z",
 	 	   "updatedAt": "2024-06-12T00:00:00.000Z"
-	 	 }
+	 	  }
 		]
 		```
 3. **Get Tickets by ID**
@@ -127,7 +127,7 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		```JSON
 	 	 {
 	 	  "title": "Sample Ticket_1",
-	  	 "description": "This is a sample ticket_1"
+	  	  "description": "This is a sample ticket_1"
 		  }
 		```
    - **Response:**
