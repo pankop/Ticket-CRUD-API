@@ -43,12 +43,12 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	    "password": "abc123"
 	  }
 	```
-	- **Response:**
-	 ```JSON
-	 {
+ - **Response:**
+	  ```JSON
+	  {
 	  "token": "jwt_token"
-	 }
-	```
+	  }
+	 ```
 2. **Login**
 	- **Method:** `POST`
 	- **Endpoint:** `/api/auth/login`
