@@ -1,4 +1,5 @@
-This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Express.js, PostgreSQL with Prisma ORM, and JWT for authentication.
+This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Express.js, PostgreSQL with Prisma ORM, and JWT for authentication. 
+Link for this project : https://github.com/pankop/Ticket-CRUD-API.git
 ## Tech Stack
 - **Backend Framework** : Express JS
 - **Database** : PostgreSQL
@@ -84,9 +85,9 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		  "id": 1,
 		  "title": "Sample Ticket",
 		  "description": "This is a sample ticket",
-		  "createdAt": "2024-06-12T00:00:00.000Z",
-		  "updatedAt": "2024-06-12T00:00:00.000Z"
-		}
+		  "status": "open",
+		  "userId": "1"
+		}		
 		```
 1. **Get All Tickets**
 	- **Method**: `GET`
@@ -99,8 +100,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		    "id": 1,
 		    "title": "Sample Ticket",
 		    "description": "This is a sample ticket",
-		    "createdAt": "2024-06-12T00:00:00.000Z",
-		    "updatedAt": "2024-06-12T00:00:00.000Z"
+		    "status": "open",
+			"userId": "1"
 		  }
 		]
 	
@@ -112,11 +113,11 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Response:**
 		```JSON
 		{
-		 "id": 1,
-		 "title": "Sample Ticket",
-		 "description": "This is a sample ticket",
-		 "createdAt": "2024-06-12T00:00:00.000Z",
-		 "updatedAt": "2024-06-12T00:00:00.000Z"
+		  "id": 1,
+		  "title": "Sample Ticket",
+		  "description": "This is a sample ticket",
+		  "status": "open",
+		  "userId": "1"
 		}
 		```
 1. **Update Ticket**
@@ -136,8 +137,8 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 		  "id": 1,
 		  "title": "Sample Ticket_1",
 		  "description": "This is a sample ticket_1",
-		  "createdAt": "2024-06-12T00:00:00.000Z",
-		  "updatedAt": "2024-06-12T00:00:00.000Z"
+		  "status": "open",
+		  "userId": "1"
 		}
 		```
 1. **Delete Ticket**
@@ -147,6 +148,6 @@ This is a simple Ticket CRUD (Create, Read, Update, Delete) API built using Expr
 	- **Response:**
 		```JSON
 		{
-		 "message": "Ticket deleted" 
+		 "msg": "Ticket removed" 
 		}
 		```
