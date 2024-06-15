@@ -8,7 +8,7 @@ Link for this project : https://github.com/pankop/Ticket-CRUD-API.git
 ## Setup Project
 1. **Clone the repository:**
 	```bash
-	git clone https://github.com/yourusername/ticket-crud-api.git 
+	git clone https://github.com/yourusername/Ticket-CRUD-API.git 
 	cd ticket-crud-api
 	```
 1. **Install dependencies:**
